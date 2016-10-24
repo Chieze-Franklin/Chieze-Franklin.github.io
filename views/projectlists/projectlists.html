@@ -1,0 +1,21 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <div class="row responsive-sm responsive-md responsive-lg">
+      <div class="col">
+        <ion-item href="#/app/projectlists/0">View All Projects</ion-item>
+      </div>
+    </div>
+    
+  	<div class="row responsive-sm responsive-md responsive-lg" ng-repeat="row in categoryRows">
+  		<div class="col" ng-repeat="category in row">
+        <my-card name="{{category.name}}" description="{{category.description}}" image="{{category.image}}" href="#/app/projectlists/{{category.id}}"></my-card>
+  		</div>
+  	</div>
+  	<!--<ion-list>
+      <ion-item ng-repeat="project in projects" href="#/app/projects/{{project.id}}">
+        {{project.title}}
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total > page" immediate-check="false"></ion-infinite-scroll>-->
+  </ion-content>
+</ion-view>
