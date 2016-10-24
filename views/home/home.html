@@ -1,15 +1,139 @@
-<ion-view view-title="Aloha Resort" hide-back-button="true">
-  <ion-content>
-    <div class="list">
-      <a href="#/reservation" class="item item-icon-left">
-        <i class="icon ion-document-text"></i> See your reservation
-      </a>
-      <a href="#/weather" class="item item-icon-left">
-        <i class="icon ion-ios-partlysunny"></i> Current weather
-      </a>
-      <a href="#/restaurants" class="item item-icon-left">
-        <i class="icon ion-fork"></i> Nearby restaurants
-      </a>
-    </div>
+<ion-view view-title="{{title}}">
+  <ion-content class="fixed-background">
+  	<div class="box box-widget widget-user">
+	    <!-- Add the bg color to the header using any of the bg-* classes -->
+	    <div class="widget-user-header bg-aqua-active">
+	      <h3 class="widget-user-username" style="color:#FFFFFF"><b>{{userName}}</b></h3>
+	      <h5 class="widget-user-desc" style="color:#FFFFFF">{{userRole}}</h5>
+	    </div>
+	    <div class="widget-user-image">
+	      <img class="img-circle" src="{{profilePic}}" alt="User Avatar">
+	    </div>
+	    <div class="box-footer">
+	      <div class="row">
+	        <div class="col-sm-2 border-right">
+	          <div class="description-block">
+	          	<a href="https://github.com/Chieze-Franklin" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/github.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+	        <div class="col-sm-2 border-right">
+	          <div class="description-block">
+	            <a href="http://1990hackaholic.blogspot.com/" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/blogger.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+	        <div class="col-sm-2">
+	          <div class="description-block">
+	            <a href="https://ng.linkedin.com/pub/franklin-chieze/aa/10/b4b" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/linkedin.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+
+	        <div class="col-sm-2">
+	          <div class="description-block">
+	            <a href="https://www.facebook.com/1990hackaholic" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/fb_page.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+	        <div class="col-sm-2 border-right">
+	          <div class="description-block">
+	          	<a href="https://twitter.com/1990hackaholic" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/twitter.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+	        <div class="col-sm-2 border-right">
+	          <div class="description-block">
+	            <a href="https://codeproject.com/Members/FranklinChieze" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/codeproject.png" width="32" height="32">
+	          	</a>
+	          </div><!-- /.description-block -->
+	        </div><!-- /.col -->
+
+	        <!--
+	        <div class="col-sm-1">
+	          <div class="description-block">
+	            <a href="https://researchgate.com/profile/FrankChieze" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/researchgate.png" width="32" height="32">
+	          	</a>
+	          </div>
+	        </div>
+	        <div class="col-sm-1">
+	          <div class="description-block">
+	            <a href="https://facebook.com/franklin.chieze.5" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/fb.png" width="32" height="32">
+	          	</a>
+	          </div>
+	        </div>
+	        <div class="col-sm-1">
+	          <div class="description-block">
+	            <a href="https://plus.google.com/+FranklinChieze" target="_blank">
+	          		<img class="img-circle" src="img/thumbs/google_plus.png" width="32" height="32">
+	          	</a>
+	          </div>
+	        </div>
+	        -->
+	      </div><!-- /.row -->
+	    </div>
+	 </div>
+
+	 <div class="row">
+	 	<div class="col-md-4">
+	 		<div class="callout callout-info lead alert alert-info">
+		       <h4>Scroll down to find out more!</h4>
+		    </div>
+	 	</div>
+	 </div>
+
+	 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+	<!-- About Me Box -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">About Me</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+            <strong><img src='img/thumbs/info.png' width="16" height="16">What You Need to Know</strong>
+            <p class="text-muted">
+                I love software development. I've always looked at the computer with a sense of awe. Now I want to understand how
+                it all works, from application software to system software to firmware to hardware.
+            </p>
+            <hr>
+            <strong><img src='img/thumbs/skill.png' width="16" height="16">Skills</strong>
+            <p>
+            	<p class="text-muted">My strongest points are:</p>
+                <span class="label label-danger">Windows (C#)</span>
+                <span class="label label-success">Android (Java)</span>
+                <span class="label label-primary">Web, UI (JavaScript, HTML, CSS, ASP.NET)</span>
+                <span class="label label-primary">Web, API (Node.js, ASP.NET, PHP)</span>
+                <span class="label label-success">Game Development (Unity3D)</span>
+                <span class="label label-danger">Microcontrollers (Arduino, Raspberry PI)</span>
+                <span class="label label-warning">Windows Phone (C#)</span>
+                <span class="label label-info">Microsoft Azure</span>
+            </p>
+            <hr>
+            <p class="text-muted">
+                View some of my most interesting <a href="#/app/projectlists" class="btn btn-primary"><b>projects</b></a>.
+            </p>
+        </div><!-- /.box-body -->
+    </div><!-- /.box -->
+
+    <!-- Get in Touch Box -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Contact Me</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+            <strong><img src='img/thumbs/info.png' width="16" height="16">Get in Touch</strong>
+            <p class="text-muted">
+                You can <a href="#/app/follow" class="btn btn-primary"><b>follow</b></a> me on various social media, or <a href="#/app/contact" class="btn btn-primary"><b>contact</b></a> me directly.
+            </p>
+        </div><!-- /.box-body -->
+    </div><!-- /.box -->
   </ion-content>
 </ion-view>
