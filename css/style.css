@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+
+.fixed-background {
+	background-image:url("../img/cover.png");
+	background-attachment: fixed;
+}
+
+#tour-view .slider {
+	height: 100%;
+}
+#tour-view .slider-slide {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+#tour-view .icon-slide {
+	font-size: 20em;
+	display: inline-block;
+}
+img.center-in-tour-view {
+    display: block;
+    margin: 0 auto;
+}

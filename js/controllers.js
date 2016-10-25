@@ -1,5 +1,9 @@
 angular.module('App.controllers', [])
 
+.controller('CvCtrl', function($scope) {
+  $scope.title = "CV";
+})
+
 .controller('HomeCtrl', function($scope, appConstants) {
   $scope.coverPic = appConstants.coverPic;
   $scope.profilePic = appConstants.profilePic;

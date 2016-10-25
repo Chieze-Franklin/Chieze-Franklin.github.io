@@ -52,6 +52,16 @@ angular.module('App', ['ionic', 'App.controllers', 'App.directives'/*'App.menu',
     }
   })
 
+  .state('app.cv', {
+    url: '/cv',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/cv/cv.html',
+        controller: 'CvCtrl'
+      }
+    }
+  })
+
   .state('app.projectlists', {
     url: '/projectlists',
     views: {
