@@ -1,11 +1,18 @@
 angular.module('App.controllers', [])
 
+.controller('BioCtrl', function($scope, appConstants) {
+  $scope.coverPic = appConstants.coverPic;
+  $scope.profilePic = appConstants.profilePic;
+  $scope.title = "Bio";
+  $scope.userName = appConstants.userName;
+  $scope.userRole = appConstants.userRole;
+})
+
 .controller('CvCtrl', function($scope) {
   $scope.title = "CV";
 })
 
 .controller('HomeCtrl', function($scope, appConstants) {
-  $scope.coverPic = appConstants.coverPic;
   $scope.profilePic = appConstants.profilePic;
   $scope.title = "Home";
   $scope.userName = appConstants.userName;
@@ -14,6 +21,28 @@ angular.module('App.controllers', [])
 
 .controller('MenuCtrl', function($scope) {
   $scope.title = "Menu";
+
+  $scope.groups = []
+  $scope.groups[0] = {
+    name: "Info",
+    icon: "ion-ios-information-outline",
+    items: [
+      { name: "Home", icon: "ion-ios-home-outline", href: "#app/home" }, 
+      { name: "Bio", icon: "", href: "#app/bio" }, 
+      { name: "Contact", icon: "", href: "#app/contact" }, 
+      { name: "Follow", icon: "", href: "#app/follow" }
+    ]
+  };
+  $scope.toggleGroup = function(group){
+    if($scope.isGroupShown(group)){
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group){
+    return $scope.shownGroup === group;
+  };
 })
 
 .controller('ProjectListCtrl', function($scope) {

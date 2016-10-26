@@ -1,6 +1,10 @@
 /* Empty. Add your own CSS if you like */
 
 .fixed-background {
+	background-image:url("../img/backdrop.png");
+	background-attachment: fixed;
+}
+.fixed-cover {
 	background-image:url("../img/cover.png");
 	background-attachment: fixed;
 }

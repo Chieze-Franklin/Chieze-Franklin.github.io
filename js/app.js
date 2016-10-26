@@ -9,6 +9,7 @@ angular.module('App', ['ionic', 'App.controllers', 'App.directives'/*'App.menu',
 .constant('appConstants', (function(){
   return {
     'appName': 'Chieze Franklin',
+    'backdropPic': 'img/backdrop.png',
     'coverPic': 'img/cover.png',
     'profilePic': 'img/profile.png',
     'userName': 'Chieze Franklin',
@@ -42,12 +43,12 @@ angular.module('App', ['ionic', 'App.controllers', 'App.directives'/*'App.menu',
     controller: 'MenuCtrl'
   })
 
-  .state('app.home', {
-    url: '/home',
+  .state('app.bio', {
+    url: '/bio',
     views: {
       'menuContent': {
-        templateUrl: 'views/home/home.html',
-        controller: 'HomeCtrl'
+        templateUrl: 'views/home/bio.html',
+        controller: 'BioCtrl'
       }
     }
   })
@@ -58,6 +59,16 @@ angular.module('App', ['ionic', 'App.controllers', 'App.directives'/*'App.menu',
       'menuContent': {
         templateUrl: 'views/cv/cv.html',
         controller: 'CvCtrl'
+      }
+    }
+  })
+
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/home/home.html',
+        controller: 'HomeCtrl'
       }
     }
   })
