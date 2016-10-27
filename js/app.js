@@ -8,11 +8,20 @@ angular.module('App', ['ionic', 'App.controllers', 'App.directives'/*'App.menu',
 
 .constant('appConstants', (function(){
   return {
-    'appName': 'Chieze Franklin',
+    'appName': 'Franklin Chieze',
     'backdropPic': 'img/backdrop.png',
+    'blogspotLink': 'http://1990hackaholic.blogspot.com/',
+    'codeprojectLink': 'https://codeproject.com/Members/FranklinChieze',
     'coverPic': 'img/cover.png',
+    'githubLink': 'https://github.com/Chieze-Franklin',
+    'googleplusLink': 'https://plus.google.com/+FranklinChieze',
+    'facebookLink': 'https://facebook.com/franklin.chieze.5',
+    'facebookpageLink': 'https://www.facebook.com/1990hackaholic',
+    'linkedinLink': 'https://ng.linkedin.com/pub/franklin-chieze/aa/10/b4b',
     'profilePic': 'img/profile.png',
-    'userName': 'Chieze Franklin',
+    'researchgateLink': 'https://researchgate.com/profile/FrankChieze',
+    'twitterLink': 'https://twitter.com/1990hackaholic',
+    'userName': 'Franklin Chieze',
     'userRole': 'Software Developer'
   };
 })())

@@ -2,6 +2,10 @@ angular.module('App.controllers', [])
 
 .controller('BioCtrl', function($scope, appConstants) {
   $scope.coverPic = appConstants.coverPic;
+  $scope.blogspotLink = appConstants.blogspotLink;
+  $scope.facebookpageLink = appConstants.facebookpageLink;
+  $scope.githubLink = appConstants.githubLink;
+  $scope.linkedinLink = appConstants.linkedinLink;
   $scope.profilePic = appConstants.profilePic;
   $scope.title = "Bio";
   $scope.userName = appConstants.userName;
@@ -13,6 +17,9 @@ angular.module('App.controllers', [])
 })
 
 .controller('HomeCtrl', function($scope, appConstants) {
+  $scope.blogspotLink = appConstants.blogspotLink;
+  $scope.facebookpageLink = appConstants.facebookpageLink;
+  $scope.githubLink = appConstants.githubLink;
   $scope.profilePic = appConstants.profilePic;
   $scope.title = "Home";
   $scope.userName = appConstants.userName;
