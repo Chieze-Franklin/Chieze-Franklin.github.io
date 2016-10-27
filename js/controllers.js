@@ -35,9 +35,9 @@ angular.module('App.controllers', [])
     icon: "ion-ios-information-outline",
     items: [
       { name: "Home", icon: "ion-ios-home-outline", href: "#app/home" }, 
-      { name: "Bio", icon: "", href: "#app/bio" }, 
-      { name: "Contact", icon: "", href: "#app/contact" }, 
-      { name: "Follow", icon: "", href: "#app/follow" }
+      { name: "Bio", icon: "ion-ios-person-outline", href: "#app/bio" }, 
+      { name: "Contact", icon: "ion-ios-email-outline", href: "#app/contact" }, 
+      { name: "Follow", icon: "ion-social-twitter-outline", href: "#app/follow" }
     ]
   };
   $scope.toggleGroup = function(group){
