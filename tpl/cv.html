@@ -1,0 +1,95 @@
+<div class="container-fluid container-fixed-lg m-t-50">
+    <!-- Nav tabs
+    <ul class="nav nav-tabs nav-tabs-linetriangle nav-tabs-separator nav-stack-sm">
+        <li ng-class="{'active': getCurrentStep() == 1 }">
+            <a data-toggle="tab" ng-click="goToStep(1)"><span>Page 1</span></a>
+        </li>
+        <li ng-class="{'active': getCurrentStep() == 2 }">
+            <a data-toggle="tab" ng-click="goToStep(2)"><span>Page 2</span></a>
+        </li>
+        <li ng-class="{'active': getCurrentStep() == 3 }">
+            <a data-toggle="tab" ng-click="goToStep(3)"><span>Page 3</span></a>
+        </li>
+        <li class="pull-right" ng-class="{'active': getCurrentStep() == 4 }">
+            <a data-toggle="tab" ng-click="goToStep(4)"><i class="fa fa-file-pdf-o tab-icon"></i> <span>PDF</span></a>
+        </li>
+    </ul> -->
+    <wizard on-finish="finished()" class="bg-white" hide-indicators="true">
+        <wz-step title="Your cart">
+            <div class="padding-20 bg-white">
+                <ul class="pager wizard">
+                    <li class="next">
+                        <button type="button" class="btn btn-primary btn-cons btn-animated from-left fa fa-arrow-right pull-right" wz-next>
+                            <span>Next</span>
+                        </button>
+                    </li>
+                    <li class="previous disabled">
+                        <button type="button" class="btn btn-default btn-cons pull-right">
+                            <span>Previous</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="row row-same-height">
+                <img class="img-responsive" src="assets/img/cv/cv1.png" style="display: block; margin: 0 auto;">
+            </div>
+        </wz-step>
+        <wz-step title="Shipping information">
+            <div class="padding-20 bg-white">
+                <ul class="pager wizard">
+                    <li class="next">
+                        <button type="button" class="btn btn-primary btn-cons btn-animated from-left fa fa-arrow-right pull-right" wz-next>
+                            <span>Next</span>
+                        </button>
+                    </li>
+                    <li class="previous">
+                        <button type="button" class="btn btn-default btn-cons pull-right" wz-previous>
+                            <span>Previous</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="row row-same-height">
+                <img class="img-responsive" src="assets/img/cv/cv2.png" style="display: block; margin: 0 auto;">
+            </div>
+        </wz-step>
+        <wz-step title="Payment Details">
+            <div class="padding-20 bg-white">
+                <ul class="pager wizard">
+                    <li class="next">
+                        <button type="button" class="btn btn-primary btn-cons btn-animated from-left fa fa-arrow-right pull-right" wz-next>
+                            <span>Next</span>
+                        </button>
+                    </li>
+                    <li class="previous">
+                        <button type="button" class="btn btn-default btn-cons pull-right" wz-previous>
+                            <span>Previous</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="row row-same-height">
+                <img class="img-responsive" src="assets/img/cv/cv3.png" style="display: block; margin: 0 auto;">
+            </div>
+        </wz-step>
+        <wz-step title="Summary">
+            <div class="padding-20 bg-white">
+                <ul class="pager wizard">
+                    <li class="next">
+                        <button type="button" class="btn btn-primary btn-cons pull-right disabled" wz-finish>
+                            <span>Next</span>
+                        </button>
+                    </li>
+                    <li class="previous">
+                        <button type="button" class="btn btn-default btn-cons pull-right" wz-previous>
+                            <span>Previous</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="padding-30">
+                <a class='btn btn-primary text-center' href="assets/pdf/cv/cv.pdf">Download the PDF Version</a>
+            </div>
+        </wz-step>
+    </wizard>
+</div>

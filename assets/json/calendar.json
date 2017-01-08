@@ -1,0 +1,13 @@
+[
+	{
+		"title": "#WeCode (January 2017)",
+        "class": "bg-success-lighter",
+        "start": "2017-01-14T11:30:00",
+        "end": "2017-01-14T19:00:00",
+        "other": {
+            "message": "Invites you to the:\nUnleashing of Jollof PHP Framework\nMoneywave: How to Simplify what Should be Simple\nRealtime apps with Spring Websockets and React",
+            "location": "Enspire Incubator, Zambezi Crescent, Maitama, Abuja",
+            "image": "assets/img/events/2017-01-14T11-30-00.jpg"
+        }
+	}
+]

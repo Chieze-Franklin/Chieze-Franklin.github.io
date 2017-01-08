@@ -1,0 +1,108 @@
+<div class="container-fluid container-fixed-lg sm-p-l-5" ng-init="loadCurrentYearTimeline()">
+    <div class="timeline-container top-circle">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Timeline</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{'active':!timelineFilter}">
+                        <a ng-class="{'text-complete':!timelineFilter}" ng-click="filterTimeline()"><i class="fa fa-list"></i> All</a>
+                    </li>
+                    <li ng-class="{'active':timelineFilter=='article'}">
+                        <a ng-class="{'text-primary':timelineFilter=='article'}" ng-click="filterTimeline('article')"><i class="fa fa-newspaper-o"></i> Articles</a>
+                    </li>
+                    <li ng-class="{'active':timelineFilter=='award'}">
+                        <a ng-class="{'text-success':timelineFilter=='award'}" ng-click="filterTimeline('award')"><i class="fa fa-trophy"></i> Awards</a>
+                    </li>
+                    <li ng-class="{'active':timelineFilter=='career'}">
+                        <a ng-class="{'text-danger':timelineFilter=='career'}" ng-click="filterTimeline('career')"><i class="fa fa-wrench"></i> Career</a>
+                    </li>
+                    <li ng-class="{'active':timelineFilter=='education'}">
+                        <a ng-class="{'text-info':timelineFilter=='education'}" ng-click="filterTimeline('education')"><i class="fa fa-graduation-cap"></i> Education</a>
+                    </li>
+                    <li ng-class="{'active':timelineFilter=='project'}">
+                        <a ng-class="{'text-warning':timelineFilter=='project'}" ng-click="filterTimeline('project')"><i class="fa fa-tasks"></i> Projects</a>
+                    </li>
+                    <li class="pull-right" ng-class="{'active':timelineFilter=='personal'}">
+                        <a ng-class="{'text-default':timelineFilter=='personal'}" ng-click="filterTimeline('personal')"><i class="fa fa-user"></i> Personal</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="timeline">
+            <div ng-repeat="timepoint in filteredTimeline" class="timeline-block">
+                <div ng-if="timepoint.type=='year'" class="timeline-point {{timepoint.color}}">
+                    <strong ng-if="timepoint.text">{{timepoint.text}}</strong>
+                </div>
+                <div ng-if="timepoint.glyph && timepoint.type!='year'" class="timeline-point {{timepoint.color}}">
+                    <i class="{{timepoint.glyph}}"></i>
+                </div>
+                <div ng-if="!timepoint.glyph && timepoint.type!='year'" class="timeline-point small"></div>
+                <!-- timeline-point -->
+                <div ng-if="timepoint.type!='year'" class="timeline-content">
+                    <div class="card share full-width">
+                        <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                        </div>
+                        <div class="card-header clearfix">
+                            <div class="user-pic">
+                                <img alt="icon" width="33" height="33" ui-jq="unveil" src="{{timepoint.icon}}">
+                            </div>
+                            <h5>{{timepoint.title}}</h5>
+                            <h6 ng-if="timepoint.location">
+                                <span class="location semi-bold"><i class="fa fa-map-marker"></i> {{timepoint.location}}</span>
+                            </h6>
+                        </div>
+                        <div ng-if="timepoint.summary" class="card-description">
+                            <h5>{{timepoint.summary}}</h5>
+                        </div>
+                        <div ng-if="timepoint.detail" class="card-content">
+                            <div class="panel panel-default panel-collstrongapsed" pg-portlet>
+                                <div class="panel-heading">
+                                    <div class="panel-controls">
+                                        <ul>
+                                            <li><a class="portlet-collapse" href="" data-toggle="collapse">more<i class="pg-arrow_maximize"></i></a>
+                                            </li>
+                                            <li><a href="" data-toggle="maximize" class="portlet-maximize"><i class="portlet-icon portlet-icon-maximize"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body" style="display: none;">
+                                    {{timepoint.detail}}
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="timepoint.links" class="card-footer clearfix">
+                            <ul class="reactions">
+                                <li ng-repeat="link in timepoint.links">
+                                    <a href="{{link.url}}"><span ng-if="!link.glyph">{{link.text}}</span><i ng-if="link.glyph" class="{{link.glyph}}"></i></a>
+                                    &nbsp;&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div ng-if="timepoint.date" class="event-date">
+                        <!--<h6 class="font-montserrat all-caps hint-text m-t-0">Apple Inc</h6>-->
+                        <small class="fs-12 hint-text">{{timepoint.date}}</small>
+                    </div>
+                </div>
+                <!-- timeline-content -->
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-point success" ng-click="loadPreviousYearTimeline()">
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
+        <!-- timeline -->
+    </div>
+    <!-- -->
+</div>
+<!-- END CONTAINER FLUID -->

@@ -1,0 +1,11 @@
+[
+	{
+		"day": "9",
+		"month": "5",
+		"icon":"assets/img/icon.png",
+		"title": "My Birthday",
+		"summary": "I was born on the 9th of May, 1990, in Nigeria.",
+		"location": "Kaduna",
+		"type": "personal"
+	}
+]

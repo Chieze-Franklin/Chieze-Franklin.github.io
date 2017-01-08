@@ -1,0 +1,10 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+
+.fixed-background {
+	background-image:url("assets/img/backdrop.png");
+	background-attachment: fixed;
+}

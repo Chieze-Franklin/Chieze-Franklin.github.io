@@ -1,0 +1,104 @@
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg fixed-background" style="background-image:url('assets/img/backdrop.png'); background-attachment: fixed;">
+    <!-- START PANEL -->
+    <div class="panel panel-transparent">
+        <div class="panel-body">
+            <div class="col-md-4 sm-no-padding">
+                <div class="panel panel-transparent">
+                    <div class="panel-body no-padding">
+                        <div id="portlet-advance" class="panel panel-default" pg-portlet on-refresh="refreshWithErrorTest('#portlet-advance')">
+                            <div class="panel-heading ">
+                                <div class="panel-title">
+                                    <img width="35" height="35" ui-jq="unveil" class="img-circle" src="assets/img/profile.png">
+                                    <div class="inline m-l-10">
+                                        {{author.name}}
+                                    </div>
+                                </div>
+                                <div class="panel-controls">
+                                    <ul>
+                                        <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="portlet-icon portlet-icon-collapse"></i></a>
+                                        </li>
+                                        <li><a href="" data-toggle="maximize" class="portlet-maximize"><i class="portlet-icon portlet-icon-maximize"></i></a>
+                                        </li>
+                                        <li><a href="" data-toggle="close" class="portlet-close"><i class="portlet-icon portlet-icon-close"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="inline m-l-10"><p class="text-center small hint-text m-t-5">{{author.slogan}}</p></div>
+                                
+                                <div>
+                                    <p class="text-center">
+                                        I code for money in Abuja where I spend my weekdays serving as a software developer and a consultant for Campus Technologies, and code for fun in Kaduna where I spend my weekends being a robotics+AI aficionado. A technofreak all week.
+                                    </p>
+                                    <p class="text-center">
+                                        I am a big fan of the creative power of software development. The ability to turn ideas into products is one of the biggest reasons I'm passionate about what I do. And I love sharing that passion with anyone who has enough free time to listen to me.
+                                    </p>
+                                    <p class="text-center">
+                                        As an active member of <a href="http://startupkaduna.com.ng/">Startup Kaduna</a>, I am part of a little group which (for some reasons) thinks it can turn Kaduna state into a thriving tech hub.
+                                        <!--Equally ridiculous, from time to time, some of my friends and I appear before children trying to convince them to choose software development as a career instead of whatever their parents want.-->
+                                    </p>
+                                    <p class="text-center">
+                                        When not coding you can catch me doing fine art (drawing<!--, painting-->), playing chess, and watching football (soccer), <!--organizing things (I have a time-table for almost everything, and many of my possessions are labelled),-->
+                                        thinking about crazy stuff, reading (I read <strong>A LOT</strong>) and writing blog posts. I do gym... in my room. And, yes, I love day-dreaming.
+                                    </p>
+                                    <!--<p class="text-center">
+                                        Finally, I'm a Christian. I have severe character flaws but I'm always fortunate to be surrounded by people who can tolerate my idiosyncrasies.
+                                    </p>-->
+                                </div>
+
+                                <div>
+                                    <ul class="list-unstyled ">
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{githubLink}}"><i class="fa fa-github"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{blog}}"><i class="pg-social"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{linkedinLink}}"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{facebookpageLink}}"><i class="fa fa-facebook-square"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a ui-sref="app.contact"><i class="fa fa-envelope"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{twitterLink}}"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{facebookLink}}"><i class="fa fa-facebook"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a ui-sref="app.follow"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PANEL -->
+</div>
+<!-- END CONTAINER FLUID -->

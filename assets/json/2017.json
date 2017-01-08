@@ -1,0 +1,9 @@
+[
+	{
+		"date": "{{date}}",
+		"icon":"assets/img/timeline/2017/{{icon}}.png",
+		"title": "{{title}}",
+		"location": "{{location}}",
+		"type": "{{type}}"
+	}
+]

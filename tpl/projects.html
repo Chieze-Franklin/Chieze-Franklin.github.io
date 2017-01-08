@@ -1,0 +1,157 @@
+<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20" ng-controller="GalleryCtrl" ng-init="init()">
+    <!-- START CATEGORY -->
+    <div class="gallery" ui-jq="isotope" ui-options="{
+            itemSelector: '.gallery-item',
+            masonry: {
+                columnWidth: 280,
+                gutter: 10,
+                isFitWidth: true
+            }
+        }">
+        <div class="gallery-filters p-t-20 p-b-10">
+            <ul class="list-inline text-right">
+                <li class="pull-left">
+                    <a class="text-default"><i class="{{currentProjectGlypgh}}"></i> {{currentProjectText}}</a>
+                </li>
+                <li ng-class="{'active':!projectFilter}">
+                    <a ng-class="{'text-complete':!projectFilter}" ng-click="filterProjects('All', 'fa fa-list')"><i class="fa fa-list"></i> All</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='web'}">
+                    <a ng-class="{'text-primary':projectFilter=='web'}" ng-click="filterProjects('Web', 'fa fa-globe', 'web')"><i class="fa fa-globe"></i> Web</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='desktop'}">
+                    <a ng-class="{'text-success':projectFilter=='desktop'}" ng-click="filterProjects('Desktop', 'fa fa-desktop', 'desktop')"><i class="fa fa-desktop"></i> Desktop</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='mobwear'}">
+                    <a ng-class="{'text-danger':projectFilter=='mobwear'}" ng-click="filterProjects(' Mobile & Wearables', 'fa fa-mobile', 'mobwear')"><i class="fa fa-mobile"></i> Mobile &amp; Wearables</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='devtools'}">
+                    <a ng-class="{'text-info':projectFilter=='devtools'}" ng-click="filterProjects('Developer Tools', 'fa fa-wrench', 'devtools')"><i class="fa fa-wrench"></i> Developer Tools</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='gamgra'}">
+                    <a ng-class="{'text-warning':projectFilter=='gamgra'}" ng-click="filterProjects('Games & Graphics', 'fa fa-gamepad', 'gamgra')"><i class="fa fa-gamepad"></i> Games &amp; Graphics</a>
+                </li>
+                <li ng-class="{'active':projectFilter=='os'}">
+                    <a ng-class="{'text-default':projectFilter=='os'}" ng-click="filterProjects('Operating System & Machine Hardware', 'fa fa-linux', 'os')"><i class="fa fa-linux"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='iot'}">
+                    <a ng-class="{'text-complete':projectFilter=='iot'}" ng-click="filterProjects('Robotics & IoT', 'fa fa-android', 'iot')"><i class="fa fa-android"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='ai'}">
+                    <a ng-class="{'text-primary':projectFilter=='ai'}" ng-click="filterProjects('AI', 'fa fa-user-secret', 'ai')"><i class="fa fa-user-secret"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='it'}">
+                    <a ng-class="{'text-success':projectFilter=='it'}" ng-click="filterProjects('IT Infrastructure', 'fa fa-server', 'it')"><i class="fa fa-server"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='data'}">
+                    <a ng-class="{'text-info':projectFilter=='data'}" ng-click="filterProjects('Data', 'fa fa-database', 'data')"><i class="fa fa-database"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='cs'}">
+                    <a ng-class="{'text-warning':projectFilter=='cs'}" ng-click="filterProjects('Computer Science Theory', 'fa fa-bar-chart', 'cs')"><i class="fa fa-bar-chart"></i> </a>
+                </li>
+                <li ng-class="{'active':projectFilter=='_'}">
+                    <a ng-class="{'text-danger':projectFilter=='_'}" ng-click="filterProjects('Anything Can Happen', 'fa fa-random', '_')"><i class="fa fa-random"></i> </a>
+                </li>
+                <li>
+                    <a><i class=""></i> </a>
+                </li>
+                <li>
+                    <a class="text-default" href="{{githubLink}}" target="_blank"><i class="fa fa-github"></i> </a>
+                </li>
+                <li>
+                    <a ui-sref="app.follow"><i class="fa fa-ellipsis-h"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- START GALLERY ITEM -->
+        <!-- 
+            I should be using ng-repeat="project in filteredProjects" (in which case I'd remove the ng-hide attribute)
+            but when the filtered list changes my display gets scattered
+        -->
+        <div ng-repeat="project in projects"
+            ng-hide="(projectFilter && project.tags.indexOf(projectFilter)==-1) || (projectFilter && !(project.tags))" 
+            class="gallery-item" data-width="{{project.columns}}" data-height="{{project.rows}}" ng-click="showItemDetails('itemDetails_' + project.id)">
+            <!-- START PREVIEW -->
+            <img ng-if="project.previews.length==1" src="{{project.previews[0]}}" alt="" class="image-responsive-height">
+            <div ng-if="project.previews.length>1" class="live-tile slide" data-speed="750" data-delay="4000" data-mode="carousel" ui-jq="liveTile">
+                <div class="slide-front">
+                    <img src="{{project.previews[0]}}" alt="" class="image-responsive-height">
+                </div>
+                <div class="slide-back">
+                    <img src="{{project.previews[1]}}" alt="" class="image-responsive-height">
+                </div>
+            </div>
+            <!-- END PREVIEW -->
+            <!-- START ITEM OVERLAY DESCRIPTION -->
+            <div class="overlayer bottom-left full-width">
+                <div class="overlayer-wrapper item-info ">
+                    <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                        <div class="">
+                            <h3 ng-if="project.columns>1" class="pull-left bold text-white no-margin">{{project.name}}</h3>
+                            <p ng-if="project.columns==1" class="pull-left bold text-white fs-14 p-t-10">{{project.name}}</p>
+                            <div class="clearfix"></div>
+                            <span class="hint-text pull-left text-white">{{project.slogan}}</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="m-t-10">
+                            <div class="thumbnail-wrapper d32 circular m-t-5">
+                                <img width="40" height="40" src="{{project.icon}}" alt="">
+                            </div>
+                            <div class="inline m-l-10">
+                                <p ng-if="project.stars" class="rating">
+                                    {{project.stars}} <i class="fa fa-star rated"></i>
+                                </p>
+                                <p ng-repeat="link in project.links" class="no-margin text-white fs-12"><a href="{{link.url}}" target="_blank">{{link.text}}</a></p>
+                            </div>
+                            <div class="pull-right m-t-10">
+                                <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT OVERLAY DESCRIPTION -->
+        </div>
+        <!-- END GALLERY ITEM -->
+    </div>
+    <!-- END CATEGORY -->
+
+    <!-- START DIALOG -->
+    <div ng-repeat="project in projects" id="itemDetails_{{project.id}}" class="dialog item-details">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content">
+            <div class="container-fluid">
+                <div class="row dialog__overview">
+                    <div class="col-sm-7 no-padding item-slideshow-wrapper full-height">
+                        <div ng-if="project.slides" class="item-slideshow full-height" ui-jq="owlCarousel" ui-options="{
+            items: 1,
+            nav: true,
+            navText: ['<i class=\'fa fa-chevron-left\'></i>', '<i class=\'fa fa-chevron-right\'></i>'],
+            dots: true
+        }">
+                            <div class="slide">
+                                <img src="{{project.slides[0]}}" alt="" class="image-responsive-height">
+                            </div>
+                            <div class="slide">
+                                <img src="{{project.slides[1]}}" alt="" class="image-responsive-height">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 p-r-35 p-t-35 p-l-35 full-height item-description">
+                        <h2 class="semi-bold no-margin font-montserrat">{{project.name}}</h2>
+                        <p ng-if="project.stars" class="rating fs-12 m-t-5">
+                            {{project.stars}} <i class="fa fa-star "></i>
+                        </p>
+                        <p class="fs-13">{{project.detail}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="close action top-right" data-dialog-close><i class="pg-close fs-14"></i>
+            </button>
+        </div>
+    </div>
+    <!-- END DIALOG -->
+</div>
+<!-- END CONTAINER FLUID -->

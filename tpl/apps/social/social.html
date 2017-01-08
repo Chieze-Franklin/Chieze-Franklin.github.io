@@ -1,0 +1,207 @@
+<div class="social-wrapper" ng-controller="SocialCtrl">
+    <div class="social " data-pages="social" pg-social>
+        <!-- START JUMBOTRON -->
+        <div class="jumbotron" data-pages="parallax" data-social="cover">
+            <div class="cover-photo">
+                <img alt="Cover photo" src="assets/img/cover.png" />
+            </div>
+            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+                <div class="inner">
+                    <div class="pull-bottom bottom-left m-b-40">
+                        <div class="row-xs-height">
+                            <div class="social-user-profile col-xs-height text-center col-top">
+                                <div class="thumbnail-wrapper d48 circular bordered b-white">
+                                    <img alt="Avatar" width="55" height="55" ui-jq="unveil" src="assets/img/profile.png">
+                                </div>
+                                <br>
+                                <i class="fa fa-check-circle text-success fs-16 m-t-10"></i>
+                            </div>
+                            <div class="col-xs-height p-l-20">
+                                <h3 class="text-white no-margin"><b>{{author.name}}</b></h3>
+                                <p class="text-white no-margin fs-16">{{author.role}}</p>
+                                <p class="text-white hint-text m-t-5 small">loves software development and wants to understand how it all works</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END JUMBOTRON -->
+        <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+            <div class="feed">
+                <!-- START DAY -->
+                <div class="day" data-social="day">
+                    <!-- START ITEM -->
+                    <div class="card no-border bg-transparent full-width" data-social="item">
+                        <!-- START CONTAINER FLUID -->
+                        <div class="container-fluid p-t-30 p-b-30 ">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="no-margin fs-16">Hi, my name is {{author.name}}, &amp; I'm a software developer.</p>
+                                    <p class="hint-text m-t-5 small">I have always looked at the computer with a sense of awe. Now I want to understand how it all works, from application software to system software.</p>
+                                    <p>Interested in knowing more? Check out my concise <a ui-sref="app.bio" class="btn btn-sm btn-primary">bio</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="m-b-5 small">Catch me anywhere here:</p>
+                                    <ul class="list-unstyled ">
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{githubLink}}"><i class="fa fa-github"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{blog}}"><i class="pg-social"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{linkedinLink}}"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{facebookpageLink}}"><i class="fa fa-facebook-square"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a ui-sref="app.contact"><i class="fa fa-envelope"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{twitterLink}}"><i class="fa fa-twitter"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a href="{{facebookLink}}"><i class="fa fa-facebook"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail-wrapper d32">
+                                                <a ui-sref="app.follow"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CONTAINER FLUID -->
+                    </div>
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    <div class="card status col2" data-social="item">
+                        <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                        </div>
+                        <div class="thumbnail-wrapper d16 pull-left" data-toggle="tooltip" title="Label" data-container="body">
+                        <img src='assets/img/thumbs/skill.png' width="16" height="16" >
+                        </div>
+                        <strong>Skills</strong>
+                        <p>
+                            <p class="text-muted">My strongest points are:</p>
+                            <span class="label label-danger">Windows (C#)</span>
+                            <span class="label label-success">Android (Java)</span>
+                            <span class="label label-primary">Web, UI (JavaScript, HTML, CSS, ASP.NET)</span>
+                            <span class="label label-primary">Web, API (Node.js, ASP.NET, PHP)</span>
+                            <span class="label label-success">Game Development (Unity3D)</span>
+                            <span class="label label-danger">Microcontrollers (Arduino, Raspberry PI)</span>
+                            <span class="label label-warning">Windows Phone (C#)</span>
+                            <span class="label label-info">Microsoft Azure</span>
+                        </p>
+                        <hr>
+                        <p class="text-muted">
+                            View some of my most interesting <a ui-sref="app.extra.projects" class="btn btn-sm btn-primary">projects</a>.
+                        </p>
+                    </div>
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    <div class="card status col2" data-social="item">
+                        <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                        </div>
+                        <strong>Get in Touch</strong>
+                        <p class="text-muted">
+                            You can <a ui-sref="app.follow" class="btn btn-sm btn-primary">follow</a> me on various social media, or <a ui-sref="app.contact" class="btn btn-sm btn-primary">contact</a> me directly.
+                        </p>
+                    </div>
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    <div class="card share  col1" data-social="item">
+                        <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                        </div>
+                        <div class="card-header clearfix">
+                            <div class="user-pic">
+                                <img alt="Profile Image" width="33" height="33" src="assets/img/temp/bolt-sm.png">
+                            </div>
+                            <h5>Bolt.js</h5>
+                            <h6>JavaScript Runtime Environment
+                            </h6>
+                        </div>
+                        <div class="card-description">
+                            <p>Bolt is MEAN in a box. Everything you need to run your JS app, from MongoDB to Node.js, in one neat package.</p>
+                        </div>
+                        <div class="card-content">
+                            <ul class="buttons ">
+                                <li class="text-black">
+                                    I <i class="fa fa-heart-o"></i> Bolt
+                                </li>
+                            </ul>
+                            <img src="assets/img/temp/bolt.png" height="250">
+                        </div>
+                        <div class="card-footer clearfix">
+                            <div class="time">learn more</div>
+                            <ul class="reactions">
+                                <li><a href="{{boltGithub}}"> <i class="fa fa-github"></i> </a></li>
+                                <li><a href=""> <i class="fa fa-space"></i> </a></li>
+                                <li><a href="{{boltBook}}"> <i class="fa fa-book"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    <div class="card share  col1" data-social="item">
+                        <div class="card-header ">
+                            <h5 class="text-complete pull-left fs-12">Latest <i class="fa fa-circle text-complete fs-11"></i></h5>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card-description">
+                            <h3>I just finished the website for <a href="http://niitabuja.com" target="_blank">NIIT Abuja</a>.</h3>
+                        </div>
+                        <div class="card-footer clearfix">
+                            <div class="pull-left"><a href="http://niitabuja.com" target="_blank">niitabuja.com</a></div>
+                            <div class="pull-right hint-text">
+                                Jan 03
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    <div class="card share  col1" data-social="item">
+                        <div class="card-header clearfix">
+                            <h5 class="text-success pull-left fs-12">In Progess <i class="fa fa-circle text-success fs-11"></i></h5>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card-description">
+                            <h3>Working on the website for <a href="http://campustechng.com" target="_blank">Campus Technologies Ltd</a>.</h3>
+                            <h6>About <span class="text-success"><i class="fa fa-sort-up small text-success"></i>80%</span> complete.</h6>
+                        </div>
+                        <div class="card-footer clearfix">
+                            <div class="pull-left"><a href="http://campustechng.com" target="_blank">campustechng.com</a></div>
+                            <div class="pull-right hint-text">
+                                Jan 03
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- END ITEM -->
+                </div>
+                <!-- END DAY -->
+            </div>
+            <!-- END FEED -->
+        </div>
+        <!-- END CONTAINER FLUID -->
+    </div>
+    <!-- /container -->
+</div>

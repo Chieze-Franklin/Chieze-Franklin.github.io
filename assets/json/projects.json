@@ -1,0 +1,16 @@
+[
+	{
+        "id": "bolt",
+        "name": "Bolt Framework",
+        "slogan": "ME*N in a box. Everything you need to work with MongoDB, Express, Node, in one neat package.",
+        "columns": "2",
+        "rows": "2",
+        "previews": ["assets/img/projects/bolt-prev.png", "assets/img/projects/bolt-prev2.png"],
+        "slides": ["assets/img/projects/bolt-prev.png", "assets/img/projects/bolt-prev2.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Bolt.js"}],
+        "icon": "assets/img/projects/bolt-icon.png",
+        "stars": "3",
+        "tags": ["web"],
+        "detail": "ME*N in a box.\nEverything you need to work with MongoDB, Express, Node, in one neat package."
+    }
+]

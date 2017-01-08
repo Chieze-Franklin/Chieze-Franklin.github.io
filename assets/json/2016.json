@@ -1,0 +1,42 @@
+[
+	{
+		"date": "2017-01-07T06:00:00",
+		"title": "Left Karabow",
+		"location": "Kaduna",
+		"type": "career"
+	},
+	{
+		"detail": "<p>In March 2016 I joined the Karabow Unify project, primarily as a supervising developer, although I was always on hand to help with a few lines of code when needed.</p>",
+		"title": "Joined the Unify Project",
+		"summary": "Joined the Unify school management system project as a supervising and contributing developer.",
+		"type": "Project"
+	},
+	{
+		"title": "Joined the Unify Project",
+		"summary": "Joined the Unify school management system project as a supervising and contributing developer.",
+		"type": "Project",
+		"links": [
+			{
+				"url": "http://whatever.com",
+				"glyph":"fa fa-comment-o",
+				"text":"awesome"
+			},
+			{
+				"url": "http://whatever.com",
+				"glyph":"fa fa-comment-o"
+			},
+			{
+				"url": "http://whatever.com",
+				"text":"awesome"
+			}
+		]
+	},
+	{
+		"date": "May 9, 1990",
+		"icon":"assets/img/icon.png",
+		"title": "My Birthday",
+		"summary": "I was born on the 9th of May, 1990, in Nigeria.",
+		"location": "Kaduna",
+		"type": "personal"
+	}
+]
