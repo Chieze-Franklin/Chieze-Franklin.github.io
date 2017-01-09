@@ -1,42 +1,60 @@
 [
 	{
-		"date": "2017-01-07T06:00:00",
-		"title": "Left Karabow",
+		"day": "10",
+		"month": "10",
+		"icon": "assets/img/timeline/2016/ctl.png",
 		"location": "Kaduna",
-		"type": "career"
+		"type": "career",
+		"title": "Started working with CTL",
+		"summary": "I started working with Campus Technologies Limited (CTL), the operators of NIIT Kaduna and NIIT Abuja.",
+		"detail": "In addition to training students in various IT skills, I would be helping CTL set up a robust software development division."
 	},
 	{
-		"detail": "<p>In March 2016 I joined the Karabow Unify project, primarily as a supervising developer, although I was always on hand to help with a few lines of code when needed.</p>",
-		"title": "Joined the Unify Project",
-		"summary": "Joined the Unify school management system project as a supervising and contributing developer.",
-		"type": "Project"
-	},
-	{
-		"title": "Joined the Unify Project",
-		"summary": "Joined the Unify school management system project as a supervising and contributing developer.",
-		"type": "Project",
+		"day": "22",
+		"month": "8",
+		"icon": "assets/img/timeline/2016/codeproject.png",
+		"type": "article",
+		"title": "C-Sharp Compiler Implementation of C-Sharp 6 Features",
+		"summary": "Had my article published on top developer site Code Project.",
+		"detail": "My previous article had been published \"under review.\" This one was published already reviewed and approved.",
 		"links": [
 			{
-				"url": "http://whatever.com",
-				"glyph":"fa fa-comment-o",
-				"text":"awesome"
+				"url": "http://www.codeproject.com/Articles/1119847/Csharp-Compiler-Implementation-of-Csharp-Features",
+				"text":"Code Project Article"
 			},
 			{
-				"url": "http://whatever.com",
-				"glyph":"fa fa-comment-o"
+				"url": "http://1990hackaholic.blogspot.com.ng/2016/08/c-sharp-compiler-implementation-of-c.html",
+				"text": "My Blog Post"
 			},
 			{
-				"url": "http://whatever.com",
-				"text":"awesome"
+				"url": "https://github.com/Chieze-Franklin/Tril",
+				"glyph":"fa fa-github-alt",
+				"text":"Quic GitHUb Repository"
 			}
 		]
 	},
 	{
-		"date": "May 9, 1990",
-		"icon":"assets/img/icon.png",
-		"title": "My Birthday",
-		"summary": "I was born on the 9th of May, 1990, in Nigeria.",
-		"location": "Kaduna",
-		"type": "personal"
+		"day": "8",
+		"month": "2",
+		"icon": "assets/img/timeline/2016/quic.png",
+		"type": "article",
+		"title": "Quic Web Development Framework - Part 1",
+		"summary": "Had my article on my Quic Framework published on top developer site Code Project.",
+		"detail": "Quic framework is a web development framework that helps you create rich web applications\n with as little HTML, JavaScript and CSS as possible. Quic is an abstraction layer at a higher\n level than HTML. The idea in Quic is very similar to that of Facebook's React; as such,\n one who understands React will find Quic very straightforward.\n Code Project is one of the most renowned developer sites, and having them publish my article,\n Introducing the Quic Web Development Framework - Part 1, was a very big source of pride.",
+		"links": [
+			{
+				"url": "http://www.codeproject.com/Articles/1077305/Introducing-the-Quic-Web-Development-Framework-Par",
+				"text":"Code Project Article"
+			},
+			{
+				"url": "http://1990hackaholic.blogspot.com/2016/03/introducing-quic-web-development.html",
+				"text": "My Blog Post"
+			},
+			{
+				"url": "https://github.com/Chieze-Franklin/Quic",
+				"glyph":"fa fa-github-alt",
+				"text":"Quic GitHUb Repository"
+			}
+		]
 	}
 ]

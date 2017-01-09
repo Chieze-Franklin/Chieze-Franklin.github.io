@@ -1,0 +1,17 @@
+[
+	{
+		"date": "2001",
+		"location": "Ogun",
+		"type": "Education",
+		"title": "Secondary Education",
+		"summary": "Got admitted into Faith Academy.",
+		"detail": "I attended Faith Academy, Canaan Land, Ota, Ogun State, a secondary school owned by the church I attend, Living Faith Church (also known as Winners Chapel), from 2001 to 2007."
+	},
+	{
+		"date": "2001",
+		"location": "Kaduna",
+		"type": "Education",
+		"title": "Primary School Graduation",
+		"summary": "Graduated from Wilson School."
+	}
+]

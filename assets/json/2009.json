@@ -1,0 +1,12 @@
+[
+	{
+		"day": "8",
+		"month": "3",
+		"location": "Ogun",
+		"type": "career",
+		"icon":"assets/img/timeline/2009/cs.png",
+		"title": "Co-Founded CLick Synergy",
+		"summary": "Co-founded an educational software company in school called CLick Synergy.",
+		"detail": "In school back then a lot of students' companies made money by selling past exam questions and answers\n to students. My idea was simply to turn that into a software. I presented the idea to a friend January 2009,\n and by March 2009 we had started a software company in school called Click Synergy.\n We made \"ePAQ\", an educational software\n that helped students prepare for exams by presenting them with past exam questions and answers.\n We also built a lot of cool features into it. For instance, we built Virtual Test, where the software\n will present you with questions (either from a particular year or picked at random), time you, and score\n you just like a teacher would do.\n Great emphasis was placed on making the software \"look like paper\". There were no buttons to click to go\n to the next or previous questions; you simply had a \"page\", much like you would in an actual paper-based exam.\n Also, when the software marked your paper after a virtual test, it did so just as a human teacher would do,\n even drawing a circle at the top of your paper and putting your score in it."
+	}
+]

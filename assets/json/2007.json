@@ -1,0 +1,20 @@
+[
+	{
+		"date": "2007",
+		"location": "Ogun",
+		"type": "Education",
+		"icon":"assets/img/timeline/2007/CU_LOGO.png",
+		"title": "Tertiary Education",
+		"summary": "Got admitted into Covenant University.",
+		"detail": "I got admitted into Covenant University (also belonging to Living Faith Church) in 2007, to study Electrical and Electronics Engineering."
+	},
+	{
+		"day": "29",
+		"month": "7",
+		"location": "Ogun",
+		"type": "Education",
+		"title": "Secondary School Graduation",
+		"summary": "Graduated from Faith Academy.",
+		"detail": "I graduated from Faith Academyin 2007. I happened to be the recipient of a leadership award for being the most outstanding prefect, having served as the health prefect."
+	}
+]

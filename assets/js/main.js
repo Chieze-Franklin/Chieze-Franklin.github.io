@@ -86,7 +86,7 @@ angular.module('app')
         $scope.year = new Date().getFullYear();
 
         var timelineYearIndex = 0;
-        var timelineYears = [2016, 1990];
+        var timelineYears = [2016, 2014, 2013, 2011, 2009, 2007, 2001, 1993, 1990];
         var timelineMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         $scope.timelineFilter;
         $scope.timeline = [];

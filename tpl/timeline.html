@@ -67,7 +67,7 @@
                                 <div class="panel-heading">
                                     <div class="panel-controls">
                                         <ul>
-                                            <li><a class="portlet-collapse" href="" data-toggle="collapse">more<i class="pg-arrow_maximize"></i></a>
+                                            <li><a class="portlet-collapse" href="" data-toggle="collapse">detail <i class="pg-arrow_maximize"></i></a>
                                             </li>
                                             <li><a href="" data-toggle="maximize" class="portlet-maximize"><i class="portlet-icon portlet-icon-maximize"></i></a>
                                             </li>
@@ -82,7 +82,7 @@
                         <div ng-if="timepoint.links" class="card-footer clearfix">
                             <ul class="reactions">
                                 <li ng-repeat="link in timepoint.links">
-                                    <a href="{{link.url}}"><span ng-if="!link.glyph">{{link.text}}</span><i ng-if="link.glyph" class="{{link.glyph}}"></i></a>
+                                    <a href="{{link.url}}" target="_blank"><span ng-if="!link.glyph">{{link.text}}</span><i ng-if="link.glyph" class="{{link.glyph}}"></i></a>
                                     &nbsp;&nbsp;
                                 </li>
                             </ul>

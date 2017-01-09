@@ -1,0 +1,33 @@
+[
+	{
+		"day": "30",
+		"month": "11",
+		"icon":"assets/img/timeline/2011/dark.png",
+		"title": "Dropped Out",
+		"summary": "Dropped out from Covenant University."
+	},
+	{
+		"day": "4",
+		"month": "5",
+		"icon":"assets/img/timeline/2011/imagine-cup.jpg",
+		"location": "Lagos",
+		"type": "award",
+		"title": "Microsoft Imagine Cup Competition",
+		"summary": "Finished as runners-up in Nigeria at the Microsoft Imagine Cup Competition.",
+		"detail": "In 2011 we applied for, and qualified for Microsoft Imagine Cup competition, under Software\n division, with the ePAQ software. It was a national event open only to students of tertiary institutions.\n We finished 2nd, partly because ePAQ had no internet feature built into it.",
+		"links": [
+			{
+				"url": "http://www.vanguardngr.com/2011/05/imagine-cup-futa-students-to-represent-nigeria-at-the-world-finals/",
+				"text":"Microsoft Imagine Cup 2011, Nigeria"
+			},
+			{
+				"url": "http://tekedia.com/4439/futa-students-win-microsoft-imagine-cup-nigeria",
+				"text":"Winners at Microsoft Imagine Cup 2011, Nigeria"
+			},
+			{
+				"url": "http://www.imaginecup.com/",
+				"text":"imaginecup.com"
+			}
+		]
+	}
+]

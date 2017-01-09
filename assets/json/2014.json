@@ -1,0 +1,27 @@
+[
+	{
+		"day": "1",
+		"month": "11",
+		"icon":"assets/img/timeline/2014/karabow.png",
+		"location": "Kaduna",
+		"type": "career",
+		"title": "Joined Karabow",
+		"summary": "Joined Nigerian tech start-up Karabow.",
+		"detail": "In 2014 I joined Karabow as a founding member. Karabow is a Nigerian tech company that specialises\n on mobile technology (hardware and software) as well as enterprise solutions.",
+		"links": [
+			{
+				"url": "http://www.karabow.com/",
+				"text":"karabow.com"
+			}
+		]
+	},
+	{
+		"day": "8",
+		"month": "3",
+		"location": "Ibadan",
+		"type": "career",
+		"title": "Co-Founded Knitle",
+		"summary": "Co-founded an alternative-payment software company called Knitle.",
+		"detail": "In 2014 I travelled to Ibadan to help build Knitle. Knitle was social commerce solution. Marketers\n created QR-codes for their products. The QR-Codes contained every information needed by a customer,\n including payment information. Marketers then placed the codes on their products. Customers then scanned\n the codes with our apps, and this scanning enabled them to pay. It was a \"scan to pay\" feature.\n It was also a social solution because any time you paid for a product, it\n appeared on your various social networks telling your friends and followers \"I just bought\n [insert item name] from [insert shop name]\". This was also a massive advert opportunity for sellers."
+	}
+]
