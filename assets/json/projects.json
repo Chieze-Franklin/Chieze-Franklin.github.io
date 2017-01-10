@@ -12,5 +12,62 @@
         "stars": "3",
         "tags": ["web"],
         "detail": "ME*N in a box.\nEverything you need to work with MongoDB, Express, Node, in one neat package."
+    },
+    {
+        "id": "maze",
+        "name": "Maze Runner",
+        "slogan": "A maze runner game built with Unity3D",
+        "columns": "1",
+        "rows": "1",
+        "previews": ["assets/img/projects/maze-prev1.jpg", "assets/img/projects/maze-prev2.jpg"],
+        "slides": ["assets/img/projects/maze-prev2.jpg", "assets/img/projects/maze-prev3.jpg"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Maze-Runner"}],
+        "icon": "assets/img/projects/maze-prev2.jpg",
+        "stars": "2",
+        "tags": ["gamgra"],
+        "detail": "Maze Runner is my first serious game, and it was built with Unity3D game engine."
+    },
+    {
+        "id": "quic",
+        "name": "Quic",
+        "slogan": "Quic is a web development framework that enables you create rich web applications with less code than is usually needed.",
+        "columns": "1",
+        "rows": "1",
+        "previews": ["assets/img/projects/quic.png", "assets/img/projects/quic.png"],
+        "slides": ["assets/img/projects/quic.png", "assets/img/projects/quic.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Quic"},
+            {"text":"blog post","url":"http://1990hackaholic.blogspot.com.ng/2016/06/introducing-quic-web-development.html"}],
+        "icon": "assets/img/projects/quic.png",
+        "stars": "2",
+        "tags": ["web", "devtools"],
+        "detail": "Quic is a web development framework that enables you create rich web applications with less code than is usually needed. Quic is basically a preprocessor; it goes through your HTML file, looking for custom tags, and producing standard HTML, CSS, JavaScript (and pretty much anything) from such tags."
+    },
+    {
+        "id": "tril",
+        "name": "Tril Framework",
+        "slogan": "Tril Framework helps you to convert .net binaries (.DLLs, .EXEs) to any language/format of your choice.",
+        "columns": "2",
+        "rows": "2",
+        "previews": ["assets/img/projects/default.png"],
+        "slides": ["assets/img/projects/default.png", "assets/img/projects/default.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Tril"}],
+        "icon": "assets/img/projects/default.png",
+        "stars": "4",
+        "tags": ["desktop", "devtools"],
+        "detail": "Tril Framework helps you to convert .net binaries (.DLLs, .EXEs) to any language/format of your choice."
+    },
+    {
+        "id": "steg",
+        "name": "Steg-Studio",
+        "slogan": "An image steganography app",
+        "columns": "1",
+        "rows": "1",
+        "previews": ["assets/img/projects/default.png"],
+        "slides": ["assets/img/projects/default.png", "assets/img/projects/default.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Steg-Studio"}],
+        "icon": "assets/img/projects/default.png",
+        "stars": "4",
+        "tags": ["desktop"],
+        "detail": "An image steganography app"
     }
 ]
