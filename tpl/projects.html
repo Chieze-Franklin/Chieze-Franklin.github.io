@@ -90,7 +90,7 @@
                             <h3 ng-if="project.columns>1" class="pull-left bold text-white no-margin">{{project.name}}</h3>
                             <p ng-if="project.columns==1" class="pull-left bold text-white fs-14 p-t-10">{{project.name}}</p>
                             <div class="clearfix"></div>
-                            <span class="hint-text pull-left text-white">{{project.slogan}}</span>
+                            <span class="hint-text pull-left text-white">{{project.description}}</span>
                             <div class="clearfix"></div>
                         </div>
                         <div class="m-t-10">
@@ -141,10 +141,12 @@
                     <div class="col-sm-5 p-r-35 p-t-35 p-l-35 full-height item-description">
                         <h2 class="semi-bold no-margin font-montserrat">{{project.name}}</h2>
                         <p ng-if="project.stars" class="rating fs-12 m-t-5">
-                            {{project.stars}} <i class="fa fa-star "></i>
+                            {{project.stars}} <i class="fa fa-star "></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            {{project.watchers}} <i class="fa fa-eye "></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            {{project.forks}} <i class="fa fa-code-fork "></i>
                         </p>
-                        <p class="fs-13">{{project.detail}}
-                        </p>
+                        <p class="fs-13">{{project.description}}</p>
+                        <p ng-repeat="link in project.links" class="no-margin text-white fs-12"><a href="{{link.url}}" target="_blank">{{link.text}}</a></p>
                     </div>
                 </div>
             </div>

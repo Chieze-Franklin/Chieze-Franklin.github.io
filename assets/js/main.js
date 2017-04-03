@@ -169,9 +169,21 @@ angular.module('app')
         $scope.filteredProjects = [];
         $http.get("assets/json/projects.json").then(function(success){
             success.data.forEach(function(project){
-                //perform any necessary operation here
-                $scope.projects.push(project);
-                $scope.filterProjects($scope.projectFilter);
+                if (!project.owner) project.owner = "Chieze-Franklin";
+                if(project.repo) {
+                    $http.get("https://api.github.com/repos/" + project.owner + "/" + project.repo).then(function(ghubSucc){
+                        var ghubData = ghubSucc.data;
+                        project.description = ghubData.description;
+                        project.forks = ghubData.forks_count;//or .forks
+                        project.stars = ghubData.stargazers_count;
+                        project.watchers = ghubData.subscribers_count;
+
+                        $scope.projects.push(project);
+                        $scope.filterProjects($scope.projectFilter);
+                    }, function(ghubErr){
+                        console.log("ghubErr", ghubErr);
+                    });
+                }
             });
             $scope.projects = success.data;
         }, function(error){
