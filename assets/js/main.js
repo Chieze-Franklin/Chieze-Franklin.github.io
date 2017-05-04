@@ -54,6 +54,7 @@ angular.module('app')
             }
         };
 
+        $scope.blog = 'https://chieze-franklin.gitbooks.io/blog/content/';
         $scope.boltBook = 'https://chieze-franklin.gitbooks.io/bolt-js/content/';
         $scope.boltGithub = 'https://github.com/Chieze-Franklin/Bolt.js';
         $scope.codeprojectLink = 'https://codeproject.com/Members/FranklinChieze';
@@ -66,7 +67,8 @@ angular.module('app')
         $scope.githubName = 'Chieze-Franklin';
         $scope.googleplusLink = 'https://plus.google.com/+FranklinChieze';
         $scope.googleplusName = '+FranklinChieze';
-        $scope.blog = 'https://chieze-franklin.gitbooks.io/blog/content/';
+        $scope.jambBotGithub = 'https://github.com/Chieze-Franklin/jamb-bot';
+        $scope.jambBotWeb = 'http://jamb-bot.herokuapp.com';
         $scope.linkedinLink = 'https://ng.linkedin.com/pub/franklin-chieze/aa/10/b4b';
         $scope.linkedinName = 'franklin-chieze';
         $scope.researchgateLink = 'https://researchgate.com/profile/FrankChieze';

@@ -12,6 +12,18 @@
         "tags": ["web"]
     },
     {
+        "id": "jambbot",
+        "name": "Jamb Bot",
+        "columns": "2",
+        "rows": "2",
+        "previews": ["assets/img/projects/jamb-bot-prev.png", "assets/img/projects/jamb-bot-prev2.png"],
+        "slides": ["assets/img/projects/jamb-bot-slide.png", "assets/img/projects/jamb-bot-slide2.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/jamb-bot"}, {"text":"website","url":"http://jamb-bot.herokuapp.com"}],
+        "icon": "assets/img/projects/jamb-bot-icon.png",
+        "repo": "jamb-bot",
+        "tags": ["web", "ai"]
+    },
+    {
         "id": "maze",
         "name": "Maze Runner",
         "columns": "1",
