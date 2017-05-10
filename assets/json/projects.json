@@ -5,7 +5,7 @@
         "columns": "2",
         "rows": "2",
         "previews": ["assets/img/projects/bolt-prev.png", "assets/img/projects/bolt-prev2.png"],
-        "slides": ["assets/img/projects/bolt-prev.png", "assets/img/projects/bolt-prev2.png"],
+        "slides": ["assets/img/projects/bolt-prev1.png", "assets/img/projects/bolt-prev12.png"],
         "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/Bolt.js"}],
         "icon": "assets/img/projects/bolt-icon.png",
         "repo": "bolt.js",
