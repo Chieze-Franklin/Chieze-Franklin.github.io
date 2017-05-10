@@ -188,7 +188,7 @@ angular.module('app')
                     });
                 }
             });
-            $scope.projects = success.data;
+            //$scope.projects = success.data;
         }, function(error){
             console.log("error", error);
         });
