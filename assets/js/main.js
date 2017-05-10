@@ -184,6 +184,8 @@ angular.module('app')
                         $scope.projects.push(project);console.log("projects>>>>>");console.log($scope.projects)
                         $scope.filterProjects($scope.projectFilter);
                     }, function(ghubErr){
+                        $scope.projects.push(project);
+                        $scope.filterProjects($scope.projectFilter);
                         console.log("ghubErr", ghubErr);
                     });
                 }
