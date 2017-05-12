@@ -36,6 +36,19 @@
         "tags": ["gamgra"]
     },
     {
+        "id": "naija",
+        "name": "Naijagraphy",
+        "columns": "1",
+        "rows": "1",
+        "previews": ["assets/img/projects/naija-prev.png", "assets/img/projects/naija-prev2.png"],
+        "slides": ["assets/img/projects/naija-slide.png", "assets/img/projects/naija-slide2.png"],
+        "links": [{"text":"github repo","url":"https://github.com/Chieze-Franklin/naijagraphy"},
+            {"text":"website","url":"https://naijagraphy.herokuapp.com/"}],
+        "icon": "assets/img/projects/naija-prev.png",
+        "repo": "naijagraphy",
+        "tags": ["web"]
+    },
+    {
         "id": "quic",
         "name": "Quic",
         "columns": "1",
